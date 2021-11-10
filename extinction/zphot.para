@@ -1,0 +1,21 @@
+#############################################################################
+#                                  FILTERS                                  #
+# $LEPHAREDIR/source/filter  -c $LEPHAREDIR/config/zphot.para               #
+# help: $LEPHAREDIR/source/filter  -h (or -help)                            #
+#############################################################################
+
+#  Filter number and context
+#  f300 f450 f606 f814 J  H  K
+#  1    2    3    4    5  6  7
+#  1    2    4    8   16  32 64 = 127
+
+FILTER_LIST        sdss/up.pb,sdss/gp.pb,sdss/rp.pb,sdss/ip.pb,sdss/zp.pb
+                                  # (in $LEPHAREDIR/filt/*)
+TRANS_TYPE         0              # TRANSMISSION TYPE
+                                  # 0[-def]: Energy, 1: Nb of photons
+FILTER_CALIB       0              # 0[-def]:  fnu=ctt
+                                  # 1      :  nu.fnu=ctt
+                                  # 2      :  fnu=nu
+                                  # 3      :  fnu=Black Body @ T=10000K
+                                  # 4      :  for MIPS (leff with nu fnu=ctt and flux with BB @ 10000K
+FILTER_FILE        SDSS.filt      # output name of filter's file  -> $LEPHAREWORK/filt/

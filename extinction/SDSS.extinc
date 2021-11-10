@@ -1,0 +1,11 @@
+# Computing ATMOSPHERIC AND GALACTIC EXTINCTION #
+# FILTER_FILE : /data/highzgal/mehta/Software/lephare/lephare_work/filt/SDSS.filt
+# EXT_CURVE   : NONE
+# GAL_CURVE   : CARDELLI law
+# OUTPUT      : SDSS.extinc
+#Filters Ext(mag/airmass) Albda/Av Albda/E(B-V) 
+up            99.990     1.582     4.905
+gp            99.990     1.220     3.781
+rp            99.990     0.879     2.723
+ip            99.990     0.673     2.087
+zp            99.990     0.488     1.513

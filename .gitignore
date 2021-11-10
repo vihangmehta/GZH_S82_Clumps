@@ -1,0 +1,11 @@
+__pycache__
+catalogs/*
+DR14/*
+photom/*
+S82/*
+beagle/data/*
+beagle/dust/*
+beagle/templates/*
+beagle/results/*
+plots/summary_clumps/*
+plots/summary_sdss/*
